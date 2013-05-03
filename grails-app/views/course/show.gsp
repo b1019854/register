@@ -23,6 +23,53 @@
 			</g:if>
 			<ol class="property-list course">
 			
+				<g:if test="${courseInstance?.courseCode}">
+				<li class="fieldcontain">
+					<span id="courseCode-label" class="property-label"><g:message code="course.courseCode.label" default="Course Code" /></span>
+					
+						<span class="property-value" aria-labelledby="courseCode-label"><g:fieldValue bean="${courseInstance}" field="courseCode"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${courseInstance?.classes}">
+				<li class="fieldcontain">
+					<span id="classes-label" class="property-label"><g:message code="course.classes.label" default="Classes" /></span>
+					
+						<g:each in="${courseInstance.classes}" var="c">
+						<span class="property-value" aria-labelledby="classes-label"><g:link controller="class" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${courseInstance?.courseName}">
+				<li class="fieldcontain">
+					<span id="courseName-label" class="property-label"><g:message code="course.courseName.label" default="Course Name" /></span>
+					
+						<span class="property-value" aria-labelledby="courseName-label"><g:fieldValue bean="${courseInstance}" field="courseName"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${courseInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="course.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${courseInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${courseInstance?.myIntProp}">
+				<li class="fieldcontain">
+					<span id="myIntProp-label" class="property-label"><g:message code="course.myIntProp.label" default="My Int Prop" /></span>
+					
+						<span class="property-value" aria-labelledby="myIntProp-label"><g:fieldValue bean="${courseInstance}" field="myIntProp"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
