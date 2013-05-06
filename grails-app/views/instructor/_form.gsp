@@ -7,7 +7,7 @@
 		<g:message code="instructor.name.label" default="Name" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textArea name="name" cols="40" rows="5" maxlength="256" required="" value="${instructorInstance?.name}"/>
+	<g:textField class='span12' name="name" cols="40" rows="5" maxlength="256" required="" value="${instructorInstance?.name}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: instructorInstance, field: 'staffId', 'error')} required">
@@ -15,12 +15,12 @@
 		<g:message code="instructor.staffId.label" default="Staff Id" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="staffId" maxlength="20" required="" value="${instructorInstance?.staffId}"/>
+	<g:textField class='span12' name="staffId" maxlength="20" required="" value="${instructorInstance?.staffId}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: instructorInstance, field: 'classes', 'error')} ">
 	<label for="classes">
-		<g:message code="instructor.classes.label" default="Classes" />
+		<g:message class='span12' code="instructor.classes.label" default="Classes" />
 		
 	</label>
 	

@@ -3,21 +3,21 @@
 	<meta name="layout" content="main">
 	</head>
   <body>
-    This is classes::classHome.gsp<br/>
-
+  <div class='container'>
+  	<div class="well well-large">
     Class Name : ${cls.name}<br/>
     Course : ${cls.course.courseName}<br/>
     Class code : ${cls.code}<br/>
     Taught By : ${cls.instructor?.name}<br/>
     Sheet Count To Date : ${sheetsSoFar}<br/>
-    <hr/>
+    </div>
     Current Sheets
-    <g:form mapping="classHome" params="${[courseCode:cls.course.courseCode,classCode:cls.code]}" method="POST">
+    <g:form mapping="classHome" params="${[courseCode:cls.course.courseCode,classCode:cls.code]}" method="POST" class='form-inline'>
       New Sheet Shortcode: <input type="text" name="shortcode"/> 
-      <input type="submit"/>
+      <input type="submit" class='btn btn-primary' />
     </g:form>
     <br/>
-    <table>
+    <table class='table table-striped'>
     <thead>
       <tr>
       	<th>Code</th>
@@ -36,7 +36,7 @@
     
     <hr/>
     Students...
-    <table>
+    <table class='table table-striped'>
     <thead>
       <tr> 
         <th>Student Number</th>
@@ -56,7 +56,7 @@
         </tr>
       </g:each>    
     </table>
-
+	</div>
     
   </body>
 </html>

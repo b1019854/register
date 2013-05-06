@@ -3,16 +3,19 @@
 	<meta name="layout" content="main">
 	</head>
   <body>
-    <h1>${course.courseName}</h1>
+  <div class='container'>
+    <h3>${course.courseName}</h3>
     <p>${course.description}</p>
     <hr/>
     Classes for this course: 
-    <table>
+    <table class='table table-striped'>
+    <thead>
       <tr>
         <td>Class Name</td>
         <td>Short Code</td>
         <td>Instructor</td>
       </tr>
+      </thead>
 
       <g:each in="${course.classes}" var="cls">
         <tr>
@@ -24,5 +27,6 @@
         </tr>
       </g:each>
     </table>
+    </div>
   </body>
 </html>

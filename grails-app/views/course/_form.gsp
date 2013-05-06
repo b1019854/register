@@ -7,12 +7,12 @@
 		<g:message code="course.courseCode.label" default="Course Code" />
 		
 	</label>
-	<g:textField name="courseCode" maxlength="20" value="${courseInstance?.courseCode}"/>
+	<g:textField class='span12' name="courseCode" maxlength="20" value="${courseInstance?.courseCode}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'classes', 'error')} ">
 	<label for="classes">
-		<g:message code="course.classes.label" default="Classes" />
+		<g:message class='span12' code="course.classes.label" default="Classes" />
 		
 	</label>
 	
@@ -29,10 +29,10 @@
 
 <div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'courseName', 'error')} ">
 	<label for="courseName">
-		<g:message code="course.courseName.label" default="Course Name" />
+		<g:message class='span12' code="course.courseName.label" default="Course Name" />
 		
 	</label>
-	<g:textField name="courseName" value="${courseInstance?.courseName}"/>
+	<g:textField class='span12' name="courseName" value="${courseInstance?.courseName}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'description', 'error')} ">
@@ -40,7 +40,7 @@
 		<g:message code="course.description.label" default="Description" />
 		
 	</label>
-	<g:textField name="description" value="${courseInstance?.description}"/>
+	<g:textField class='span12' name="description" value="${courseInstance?.description}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: courseInstance, field: 'myIntProp', 'error')} required">
@@ -48,6 +48,6 @@
 		<g:message code="course.myIntProp.label" default="My Int Prop" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="myIntProp" type="number" value="${courseInstance.myIntProp}" required=""/>
+	<g:field class='span12' name="myIntProp" type="number" value="${courseInstance.myIntProp}" required=""/>
 </div>
 
