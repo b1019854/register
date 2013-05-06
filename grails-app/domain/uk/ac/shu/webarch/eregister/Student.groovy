@@ -24,6 +24,11 @@ class Student {
     courses:'student',
     classAtts:'student'
   ]
+  
+  static mapping = {
+  	notes column: 'student_notes', type: 'text';
+  	fullStudentName defaultValue: 'Default';
+  }
 
   /**
    * TODO:

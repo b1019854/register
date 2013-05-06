@@ -18,7 +18,7 @@ class Class {
 		enrolledStudents:'regClass', registrationSheets:'regClass'
 	]
 
-    	static constraints = {
+    static constraints = {
    	}
 
 	static mapping = {
