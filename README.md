@@ -12,7 +12,9 @@ Clone the development branch from this repository
 
 ##### Run Application
 Run the application by navigating to the directory you cloned the repo into and then use the following command to run the application:
+```
 grails run-app
+```
 
 ##### Using the application
 Navigate to the link given when you ran the application.
