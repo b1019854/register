@@ -68,7 +68,6 @@ class ClassesController {
     // Create a list containing each student and their attendance for this class
     def result = []
     class_info.enrolledStudents.each { es ->
-    println("fucking work!");
       def student_info = [:]
       student_info.student = es.student;
       def student_attendance_query = RegEntry.where { student == es.student && regSheet.regClass == class_info };      
