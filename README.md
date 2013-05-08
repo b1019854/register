@@ -6,9 +6,15 @@ eRegitser Application that allows students to sign in to a class.
 ### Installation Instructions
 ##### Database
 Create a database called 'eregister' with the root user and password of 'password'
+```
+create database eregister
+```
 
 ##### Clone
 Clone the development branch from this repository
+```
+git clone https://github.com/b1019854/register.git
+```
 
 ##### Run Application
 Run the application by navigating to the directory you cloned the repo into and then use the following command to run the application:
